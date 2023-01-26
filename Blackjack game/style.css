@@ -1,0 +1,48 @@
+@font-face {
+    font-family: JosefinSansBold;
+    src: url(JosefinSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: JosefinSansMed;
+    src: url(JosefinSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: JosefinSansItalic;
+    src: url(JosefinSans-BoldItalic.ttf);
+}
+
+body{
+    font-family: JosefinSansMed;
+    background: green;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+.heading{
+    color: rgb(252, 198, 5);
+    letter-spacing: 0.5em;
+    text-decoration: underline;
+}
+
+button{
+    background-color: rgb(252, 198, 5);
+    color: green;
+    font-size: 25px;
+    border-radius: 2px;
+    font-family: JosefinSansBold;
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+
+button:hover{
+    box-shadow: 0px 2px 5px white;
+    transition: 1s;
+    letter-spacing: 0.4rem;
+    font-size: 28px;
+}
+#status{
+    font-family: JosefinSansItalic;   
+}
