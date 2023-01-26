@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Adlery";
+    src: url("font/Adlery-Swash-trial.ttf");
+}       
+
+*{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    color: white;
+}
+
+body{
+    background: linear-gradient(-45deg, rgb(193, 193, 193), #5d4a1f   ,  #e1e16b,#8A6E2F ,  rgb(193, 193, 193));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    letter-spacing: 0.1rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header{
+    padding: 0rem;
+    font-family: 'Adlery';
+    font-size: 2rem;
+}
+
+.magicball_outer{
+    cursor: pointer;
+    background: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    box-shadow: 10px 10px 30px rgb(13, 15, 12), -10px -10px 30px #4a4a4a;
+    position: relative;
+}
+
+.magicball_inner{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: #999;
+}
+
+.magicball_response{
+    text-align: center;
+    font-size: 7.5rem;
+    color: #222;
+    line-height: 1.2rem;
+    cursor:pointer;
+    text-overflow: clip;
+}
+
+.magicball_spotlight{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 5px;
+    background: #333;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+.magicball_bg_shadow{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: 0px;
+    border-radius: 50%;
+    background: #666;
+    opacity: 0.2;
+}
+
+.magicball_upper_shadow{
+    position: absolute;
+    width: 75px;
+    height: 50px;
+    background: #AAA;
+    opacity: 0.8;
+    top: 5px;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+
+.magicball_lower_shadow{
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    background: #AAA;
+    opacity: 0.15;
+    top: 7px;
+    border-radius: 50%;
+
+}
+
+
+.inputfield{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding: 15px 50px 15px 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    text-align: left;
+    border: 0;
+    margin: 3px;
+    color: black;
+}
+input:focus{
+    outline: 2px solid rgb(140,0,255);
+}
+button{
+    margin: 3px;
+    padding: 10px 80px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: purple;
+    color: white;
+    border: 2px solid rgb(18,0,31);
+}
+button:hover{
+    background-color: rgb(85,0,85);
+}
+button:active{
+    background-color: rgb(34,25,34);
+}
+#response{
+    width: 70px;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 120px;
+}
+.whitesurface{
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animateNow{
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes shake{
+    0%{
+        -webkit-transform: rotate(1280deg) scale(1) translate(10px);
+    }10%{
+        -webkit-transform: translate(10px) rotate(30deg) scale(1,1,1,1);
+    }20%{
+        -webkit-transform: translate(10px) rotate(60deg) scale(1,1,1,1);
+    }30%{
+        -webkit-transform: translate(0,0) rotate(100deg) scale(1,1,1,1);
+    }40%{
+        -webkit-transform: translate(0,0) rotate(130deg) scale(1,1,1,1);
+    }50%{
+        -webkit-transform: translate(0,0) rotate(160deg) scale(1,1,1,1);
+    }60%{
+        -webkit-transform: translate(0,0) rotate(180deg) scale(1,1,1,1);
+    }70%{
+        -webkit-transform: translate(0,0) rotate(0deg) scale(1,1,1,1);
+    }80%{
+        -webkit-transform: translate(0,0) rotate(0deg) scale(1,1,1,1);
+    }90%{
+        -webkit-transform: translate(0,0) rotate(0deg) scale(1,1,1,1);
+    }100%{
+        -webkit-transform: translate(0,0) rotate(0deg) scale(1,1,1,1);
+    }
+}
